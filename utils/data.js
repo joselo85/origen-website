@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllDishes = (callback) => {
-    request('https://origen-api-pwi.herokuapp.com/', (error, res, body) => {
+    request('https://origen-api-pwi.herokuapp.com/dishes', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
